@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 ⭐🌟 B͙O͙T͙ L͙O͙G͙O͙ 🌟⭐
 
-[![MAFIA 𝙱𝙾𝚃 ℓσgσ](https://telegra.ph/file/IMG_20211220_211334.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE) 
+[![MAFIA 𝙱𝙾𝚃 ℓσgσ](https://telegra.ph/file/img_20211220_211334.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE) 
 [![MAFIA 𝙱𝙾𝚃 ℓσgσ]( https://telegra.ph/file/ea68644f59bdaf57fd61e.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)                       
                        
 🌟 d͙e͙p͙l͙o͙y͙ 🌟
