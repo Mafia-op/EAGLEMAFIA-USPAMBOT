@@ -25,6 +25,7 @@
 
  ❀💋 ᑕOᑎTᗩᑕT ᑌᔕ Oᑎ TEᒪEGᖇᗩᗰ 💋❀:>>>>>>>
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/MAMBA_STAR)╏╠══[𝍖𝍖𝍖 𝚂𝚄𝙺𝙷𝙿𝙰𝙻 𝍖𝍖𝍖]      💦
+ ❀💋 ᑕOᑎTᗩᑕT ᑌᔕ Oᑎ TEᒪEGᖇᗩᗰ 💋❀:>>>>>>>
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/Cazadar_op)╏╠══[𝍖𝍖𝍖 𝙹𝙰𝚃𝙸𝙽 𝍖𝍖𝍖]      💦
 
 ██▓▒­░⡷⠂𝙳𝙾𝙽𝚃 𝙵𝙾𝚁𝙺 𝚆𝙸𝚃𝙷𝙾𝚄𝚃 𝙾𝚆𝙽𝙴𝚁'𝚂 𝙿𝙴𝚁𝙼𝙸𝚂𝚂𝙸𝙾𝙽⠐⢾░▒▓██
