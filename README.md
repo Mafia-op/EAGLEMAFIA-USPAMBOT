@@ -19,8 +19,9 @@ Here are some ideas to get you started:
 
 ⭐🌟 B͙O͙T͙ L͙O͙G͙O͙ 🌟⭐
 
-[![MAFIA 𝙱𝙾𝚃 ℓσgσ](https://telegra.ph/file/f77d8aa94e5dece033137.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE) 
-[![MAFIA 𝙱𝙾𝚃 ℓσgσ]( https://telegra.ph/file/ea68644f59bdaf57fd61e.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)                       
+[![spam userbot ℓσgσ](https://telegra.ph/file/f77d8aa94e5dece033137.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE) 
+<p> IF YOU WANT TO JOIN US SO PLEASE CLICK ON THE EAGLE PIC </P>
+                      
                        
 🌟 d͙e͙p͙l͙o͙y͙ 🌟
 
@@ -32,7 +33,7 @@ Here are some ideas to get you started:
 [.](https://heroku.com/deploy)
 Credits - [TEAM MAFIA](https://t.me/BLACK_MAFIA_OP_BOLTE)
 
- CONTACT ME ON TELEGRAM:>>>>>>>
+ CONTACT US ON TELEGRAM:>>>>>>>
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/MAMBA_STAR)
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/Cazadar_op) 
 
