@@ -36,7 +36,8 @@ Here are some ideas to get you started:
 ⭐🌟 C͙R͙E͙D͙I͙T͙S͙ 🌟⭐
 
 [.](https://heroku.com/deploy)
-Credits - [TEAM MAFIA](https://t.me/BLACK_MAFIA_OP_BOLTE)
+Credits - 
+[![TEAM EAGLEYUVI SPAMUSERBOT](https://telegra.ph/file/f77d8aa94e5dece033137.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)  
 
  CONTACT US ON TELEGRAM:>>>>>>>
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/MAMBA_STAR)
