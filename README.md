@@ -24,6 +24,7 @@ Here are some ideas to get you started:
  
  
 🌟 STRING SESSION 🌟
+
 [![REPL.IT](https://img.shields.io/badge/repl.it-generateString-yellowgreen )](https://replit.com/@Jaggi444/MAFIAOP#main.py)                      
 
 
@@ -43,4 +44,4 @@ Credits - [TEAM MAFIA](https://t.me/BLACK_MAFIA_OP_BOLTE)
 
 DONT FORK WITHOUT OWNER'S PERMISSION
   
-  https://replit.com/@Jaggi444/MAFIAOP#main.py
+  
