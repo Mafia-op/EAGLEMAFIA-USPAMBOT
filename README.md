@@ -21,8 +21,12 @@ Here are some ideas to get you started:
 
 [![spam userbot ℓσgσ](https://telegra.ph/file/f77d8aa94e5dece033137.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE) 
 <p> IF YOU WANT TO JOIN US SO PLEASE CLICK ON THE EAGLE PIC </P>
-                      
-                       
+ 
+ 
+🌟 STRING SESSION 🌟
+[![REPL.IT](https://img.shields.io/badge/repl.it-generateString-yellowgreen )](https://replit.com/@Jaggi444/MAFIAOP#main.py)                      
+
+
 🌟 d͙e͙p͙l͙o͙y͙ 🌟
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mafia-op/MAFIA-OP)
@@ -38,3 +42,5 @@ Credits - [TEAM MAFIA](https://t.me/BLACK_MAFIA_OP_BOLTE)
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/Cazadar_op) 
 
 DONT FORK WITHOUT OWNER'S PERMISSION
+  
+  https://replit.com/@Jaggi444/MAFIAOP#main.py
