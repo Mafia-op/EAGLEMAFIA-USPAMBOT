@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 
 [.](https://heroku.com/deploy)
 Credits - 
-[![TEAM EAGLEYUVI SPAMUSERBOT](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)  
+[![TEAM EAGLEYUVI SPAMUSERBOT](https://telegra.ph/file/7dff36c98b1de31bb4ba6.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)  
 
  CONTACT US ON TELEGRAM:>>>>>>>
  [![Owner](https://telegra.ph/file/3af984f455d98e274ea1b.jpg)](https://t.me/MAMBA_STAR)
