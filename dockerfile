@@ -1,10 +1,10 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $EAGLE_REPO == "EAGLEYUVI SPAMUSERBOT" ]]
+    if [[ $EAGLE_REPO == "EAGLEMAFIA-USPAMBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RlYW0tTWFmaWEvc3BhbWJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $EAGLE_REPO == "EAGLEYUVI SPAMUSERBOT" ]]
+    elif [[ $EAGLE_REPO == "EAGLEMAFIA-USPAMBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RlYW0tTWFmaWEvc3BhbWJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $EAGLE_REPO =~ $regex ]]
@@ -23,20 +23,20 @@ _get_repolink () {
 
 _set_bot () {
     local zippath
-    zippath="EAGLEYUVI SPAMUSERBOT.zip"
+    zippath="EAGLEMAFIA-USPAMBOT.zip"
     echo "  Downloading eagleyuvi spamuserbot  Source Code..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
     EAGLEPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo "Done"
-    echo "  eagleyuvispamuserbot  Cleaning.."
+    echo "  eaglemafiauspambot  Cleaning.."
     rm -rf "$zippath"
     sleep 5
     cd $EAGLEPATH
-    echo "    🐍 ֆȶǟʀȶɨռɢ ֆʍօȶɦɛֆ ɛǟɢʟɛʏʊʋɨֆքǟʍʊֆɛʀɮօȶ 🐍     "
+    echo "    🐍 ֆȶǟʀȶɨռɢ ֆʍօօȶɦɛֆȶ ɛǟɢʟɛʍǟʄɨǟ ʊֆքǟʍɮօȶ 🐍     "
     echo "
-    EAGLEYUVI SPAMUSERBOT
+    EAGLEMAFIA-SPAMUSERBOT
     "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
