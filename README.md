@@ -13,8 +13,11 @@
 
 
 🌟 ██▓▒­░⡷⠂𝙳𝙴𝙿𝙻𝙾𝚈⠐⢾░▒▓██ 🌟
+<p>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a></p>
 
-#### COMING SOON SORRY GUYS SOME PROBLEM IN THIS BOT PLEASE WAIT FOR SOME TIMES.
+ <h> DEPLOY ON RAILWAY </h>
+ <p> sorry guys please wait for railway deploy button </p>
 
 ⭐🌟 🅲🆁🅴🅳🅸🆃🆂 🌟⭐
 
