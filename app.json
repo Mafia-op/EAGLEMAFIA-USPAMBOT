@@ -1,17 +1,17 @@
 {
-    "name": "DAD HERE.",
-    "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
+    "name": "EAGLEMAFIA-USPAMBOT.",
+    "description": "MOST POWERFUL + STABLE SPAMMING USERBOTS",
     "logo": "https://telegra.ph/file/63a35f4a4724701e2978e.jpg",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "DAD",
+        "EAGLEMAFIA-USPAMBOT",
         "SpamBots"
     ],
-    "repository": "https://t.me/SUKHPAL443",
-    "website": "https://github.com/SUKHPAL443",
-    "success_url": "https://t.me/TG_WALI_MASTI",
+    "repository": "https://t.me/Mafia-op/EAGLEMAFIA-USPAMBOT",
+    "website": "https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT",
+    "success_url": "https://t.me/BLACK_MAFIA_OP_BOLTE",
     "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
