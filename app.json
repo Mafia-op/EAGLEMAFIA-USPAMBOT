@@ -33,7 +33,7 @@
         "required": true
       },
       "HEROKU_API_KEY": {
-          "description": Get your heroku api key from heroku.com",
+          "description": "Get your heroku api key from heroku.com",
           "value": "",
           "required": true 
       },    
