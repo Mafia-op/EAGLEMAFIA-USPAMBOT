@@ -1,22 +1,18 @@
 {
-    "name": " EAGLEMAFIA_USPAMBOT.",
+    "name": "DAD HERE.",
     "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
     "logo": "https://telegra.ph/file/63a35f4a4724701e2978e.jpg",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "EAGLEMAFIA-USPAMBOT",
+        "DAD",
         "SpamBots"
     ],
-    "repository": "https://t.me/Mafia-op/EAGLEMAFIA-USPAMBOT",
-    "website": "https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT",
-    "success_url": "https://t.me/MAMBA_X_SUPPORT",
+    "repository": "https://t.me/SUKHPAL443",
+    "website": "https://github.com/SUKHPAL443",
+    "success_url": "https://t.me/TG_WALI_MASTI",
     "env": {
-        "APP_NAME": {
-            "description": "Fill your heroku app name",
-            "value": "",
-            "required": true
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
@@ -32,11 +28,6 @@
         "value": "",
         "required": true
       },
-      "HEROKU_API_KEY": {
-          "description": "Get your heroku api key from heroku.com",
-          "value": "",
-          "required": true 
-      },    
       "STRING": {
         "description": "Telethon String Session",
         "value": "",
