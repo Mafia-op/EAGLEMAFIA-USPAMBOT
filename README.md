@@ -22,7 +22,7 @@
 ⭐🌟 🅲🆁🅴🅳🅸🆃🆂 🌟⭐
 
 [.](https://heroku.com/deploy)
-(😍‿😍) CREDITS (😍‿😍) - 
+(😍‿😍) SUKHPAL + JATIN(😍‿😍) - 
 [![TEAM EAGLEMAFIA USPAMBOT](https://telegra.ph/file/7dff36c98b1de31bb4ba6.jpg)](https://t.me/BLACK_MAFIA_OP_BOLTE)  
 
  <p> 
