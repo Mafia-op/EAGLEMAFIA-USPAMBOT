@@ -16,8 +16,8 @@
 <p>
 <a href="https://dashboard.heroku.com/new?template=https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a></p>
 
-### DEPLOY ON RAILWAY
- #### GUYS WAIT FOR RAILWAY BUTTON
+ 
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT&envs=ALIVE_NAME,API_HASH,API_ID,ASSISTANT_NAME,BOT_NAME,BOT_TOKEN,BOT_USERNAME,DURATION_LIMIT,GROUP_SUPPORT,OWNER_NAME,SESSION_NAME,SUDO_USERS,UPDATES_CHANNEL)
 
 ⭐🌟 🅲🆁🅴🅳🅸🆃🆂 🌟⭐
 
