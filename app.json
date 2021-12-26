@@ -13,6 +13,10 @@
     "website": "https://github.com/Mafia-op/EAGLEMAFIA-USPAMBOT",
     "success_url": "https://t.me/MAMBA_X_SUPPORT",
     "env": {
+        "APP_NAME": {
+            "description": "Fill your heroku app name",
+            "value": "",
+            "required": true
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
@@ -28,7 +32,12 @@
         "value": "",
         "required": true
       },
-      "STRING": {
+      "HEROKU_API_KEY": {
+          "description": Get your heroku api key from heroku.com",
+          "value": "",
+          "required": true 
+      },    
+      "MAIN_STRING": {
         "description": "Telethon String Session",
         "value": "",
         "required": true
