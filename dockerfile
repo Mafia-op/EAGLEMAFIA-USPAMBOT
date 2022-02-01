@@ -1,12 +1,12 @@
 #Repo Clonning ⚡♥️
-RUN git clone https://github.com/Team-mafia/spambot /root/userbot
+RUN git clone https://github.com/Team-Mafia/spambot /root/userbot
 
-#working directory 
-WORKDIR /root/userbot
+RUN mkdir /root/userbot/bin/
 
-# Install requirements
-RUN pip3 install -U -r requirements.txt
+WORKDIR /root/userbot/
 
-ENV PATH="/home/userbot/bin:$PATH"
+RUN chmod +x /usr/local/bin/
 
-CMD ["python3","-m","userbot"]
+*RUN pip3 install -r requirements.txt
+
+CMD ["bash","./EAGLEMAFIA-USPAMBOT/start.sh"]
