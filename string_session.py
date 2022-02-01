@@ -1,29 +1,35 @@
-print(
-    "ㅤ\nㅤ\n\n\n\nㅤ\n┈┈┏━╮╭━┓┈╭━━━━━━╮\n┈┈┃┏┗┛┓┃╭┫EAGLEYUVI SPAMUSERBOT ┃\n┈┈╰┓▋▋┏╯╯╰━━━━━━╯\n┈╭━┻╮╲┗━━━━╮╭╮┈\n┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n┈┈┈╰━┳┓┏┳┓┏╯┈┈┈\n┈┈┈┈┈┗┻┛┗┻┛┈┈┈┈┏━╮╭━┓┈╭━━━━━━╮\n┈┈┃┏┗┛┓┃╭┫EAGLEYUVI SPAMUSERBOT ┃\n┈┈╰┓▋▋┏╯╯╰━━━━━━╯\n┈╭━┻╮╲┗━━━━╮╭╮┈\n┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n┈┈┈╰━┳┓┏┳┓┏╯┈┈┈\n┈┈┈┈┈┗┻┛┗┻┛┈┈┈┈┏━╮╭━┓┈╭━━━━━━╮\n┈┈┃┏┗┛┓┃╭┫EAGLEYUVI SPAMUSERBOT ┃\n┈┈╰┓▋▋┏╯╯╰━━━━━━╯\n┈╭━┻╮╲┗━━━━╮╭╮┈\n┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n┈┈┈╰━┳┓┏┳┓┏╯┈┈┈\n┈┈┈┈┈┗┻┛┗┻┛┈┈┈┈┏━╮╭━┓┈╭━━━━━━╮\n┈┈┃┏┗┛┓┃╭┫EAGLEYUVI SPAMUSERBOT ┃\n┈┈╰┓▋▋┏╯╯╰━━━━━━╯\n┈╭━┻╮╲┗━━━━╮╭╮┈\n┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n┈┈┈╰━┳┓┏┳┓┏╯┈┈┈\n┈┈┈┈┈┗┻┛┗┻┛┈┈"
-)
-print("\n\n\n\n\nABE GANDU SUNN TU STRING SESSION GENERATE KARNA KYA TU IDHAR UDHAR LADKI KO DEKH RAHA VO SETTING HAI HAMARI. ABE CHAL NA CREATE KAR STRING SESSION")
-print("\n\nEAGLEYUVI SPAMUSERBOT ")
-
-print("\n\nProperly Fill APP_ID ,HASH and Number.\n")
-
-from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
-APP_ID = int(input("Enter APP ID here: "))
-API_HASH = input("Enter API HASH here: ")
-with TelegramClient(StringSession(), APP_ID, API_HASH) as hehe:
-	dcsession = hehe.session.save()
-	dEAGLE = hehe.send_message(
-	    "me",
-	    f"`{dcsession}`\n\n**Your EAGLEYUVI String Session Here Sir😁😎😎\nClick on above Code to Copy it\n\nFor Support Join** @BLACK_MAFIA_OP_BOLTE"
-	)
+from telethon.sync import TelegramClient
 
-print("\n\n############################\n")
-print(
-    "IDHAR KUCH NHI H BE GANDU SUNN TU APNE ACCOUNT KA SAVE MESSAGES OPEN KAR OR UDHAR JAA KAR DEKHLE STRING SESSION PADA HOGA 😂😂. ")
+print("")
+print("""Welcome To TBH String Session\nGenerator By @Cazador_op\n\n""")
+print("""Special Thanks To My Buddy Respective TBH USERBOT\nOwner @BLACKMAMBA_OFFICIAL\n\n""")
+print("""Enter Your Valid Details To Continue!\n\n """)
 
-print("\n############################\n")
+API_KEY = input("API_ID:  ")
+API_HASH = input("API_HASH:  ")
 
+while True:
+    try:
+        with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
+            print(
+                "String Session Sucessfully Sent To Your Saved Message, Store It To A Safe Place!!\n\n "
+            )
+            print("")
+            session = client.session.save()
+            client.send_message(
+                "me",
+                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @TBH_NETWORK For Any Help!\n\n",
+            )
 
-print(f"{dcsession}")
-
-Print(" ")
+            print(
+                "Thanks for Choosing TBH USERBOT Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+            )
+    except:
+        print("")
+        print(
+            "Wrong phone number \n make sure its with correct country code. Example : +918925534834! Kindly Retry"
+        )
+        print("")
+        continue
+    break
