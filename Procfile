@@ -1,1 +1,1 @@
-worker: bash EAGLEUB SPAMBOT
+worker: bash EAGLEMAFIA-USPAMBOT
