@@ -1,5 +1,5 @@
 #Repo Clonning ⚡♥️
-RUN git clone https://github.com/Team-mafia/spambot.git /root/userbot
+RUN git clone https://github.com/Team-mafia/spambot /root/userbot
 
 #working directory 
 WORKDIR /root/userbot
