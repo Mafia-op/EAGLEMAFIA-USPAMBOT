@@ -1,1 +1,1 @@
-worker: bash EAGLEMAFIA-USPAMBOT
+worker: python3 mafia.py
