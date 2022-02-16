@@ -6,7 +6,7 @@ from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
-from config import  STRING1, SUDO, BIO_MESSAGE, API_ID, API_HASH, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10
+from config import API_ID, API_HASH, STRING_1 STRING_2, STRING_3, STRING_4 ,STRING_5, STRING_6, STRING_7, STRING_8 ,STRING_9, STRING_10
 import asyncio
 import telethon.utils
 from telethon.tl import functions
