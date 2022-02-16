@@ -1,12 +1,10 @@
-#Repo Clonning ⚡♥️
-RUN git clone https://github.com/Team-Mafia/spambot /root/userbot
+FROM debian:latest
 
-RUN mkdir /root/userbot/bin/
-
-WORKDIR /root/userbot/
-
-RUN chmod +x /usr/local/bin/
-
-*RUN pip install -r requirements.txt
-
-CMD ["bash","./EAGLEMAFIA-USPAMBOT/start.sh"]
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip -y
+RUN pip3 install -U pip
+RUN mkdir /app/
+WORKDIR /app/
+COPY . /app/
+RUN pip3 install -U -r requirements.txt
+CMD python3 mafia.py
