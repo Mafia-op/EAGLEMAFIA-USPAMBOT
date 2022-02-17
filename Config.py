@@ -14,5 +14,4 @@ STRING10 = getenv("STRING10")
 API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 BIO_MESSAGE = getenv("BIO")
-
 SUDO = getenv(("SUDO").strip())
