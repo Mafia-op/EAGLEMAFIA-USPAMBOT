@@ -45,7 +45,6 @@ ddk = ""
 que = {}
 
 S1_USERS = []
-    S1_USERS.append(x)
     
 async def start_eagle():
     global idk
