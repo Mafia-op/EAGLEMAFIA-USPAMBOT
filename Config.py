@@ -15,4 +15,4 @@ API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 BIO_MESSAGE = getenv("BIO")
 
-SUDO = getenv("SUDO")
+SUDO = getenv(("SUDO").strip())
