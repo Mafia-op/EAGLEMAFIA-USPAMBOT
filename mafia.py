@@ -17,7 +17,7 @@ from Utils import RAID, RRAID
 
 a = API_ID
 b = API_HASH
-S1 = STRING1
+S1 = STRING
 S2 = STRING2
 S3 = STRING3
 S4 = STRING4
@@ -75,7 +75,7 @@ async def start_eagle():
             print(e)
             pass
     else:
-        print("Session 1 not Found")
+        print("Session not Found")
         session_name = "startup"
         idk = TelegramClient(session_name, a, b)
         try:
