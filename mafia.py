@@ -2,7 +2,7 @@ import os
 import sys
 import random
 from datetime import datetime
-from os import excel
+from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.account import UpdateProfileRequest
