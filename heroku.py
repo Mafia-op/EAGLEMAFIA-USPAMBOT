@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: python3 mafia.py
+   worker: python3 EAGLEMAFIA.py
