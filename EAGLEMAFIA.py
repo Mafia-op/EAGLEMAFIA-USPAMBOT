@@ -72,7 +72,6 @@ async def start_eagle():
         except Exception as e:
             idk = "S1"
             print(e)
-            pass
     else:
         print("Session not Found")
         session_name = "startup"
@@ -81,7 +80,7 @@ async def start_eagle():
             await idk.start()
         except Exception as e:
             pass
-   
+
     if S2:
         session_name = str(S2)
         print("String 2 Found")
@@ -96,10 +95,8 @@ async def start_eagle():
             S2_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 2 not Found")
-        pass
         session_name = "startup"
         ydk = TelegramClient(session_name, a, b)
         try:
@@ -121,10 +118,8 @@ async def start_eagle():
             S3_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 3 not Found")
-        pass
         session_name = "startup"
         wdk = TelegramClient(session_name, a, b)
         try:
@@ -146,10 +141,8 @@ async def start_eagle():
             S4_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 4 not Found")
-        pass
         session_name = "startup"
         hdk = TelegramClient(session_name, a, b)
         try:
@@ -171,17 +164,15 @@ async def start_eagle():
             S5_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 5 not Found")
-        pass
         session_name = "startup"
         sdk = TelegramClient(session_name, a, b)
         try:
             await sdk.start()
         except Exception as e:
             pass
-                  
+
     if S6:
         session_name = str(S6)
         print("String 6 Found")
@@ -196,10 +187,8 @@ async def start_eagle():
             S6_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 6 not Found")
-        pass
         session_name = "startup"
         adk = TelegramClient(session_name, a, b)
         try:
@@ -221,18 +210,16 @@ async def start_eagle():
             S7_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 7 not Found")
-        pass
         session_name = "startup"
         bdk = TelegramClient(session_name, a, b)
         try:
             await bdk.start()
         except Exception as e:
             pass    
-        
-    
+
+
     if S8:
         session_name = str(S8)
         print("String 8 Found")
@@ -247,17 +234,15 @@ async def start_eagle():
             S8_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 8 not Found")
-        pass
         session_name = "startup"
         cdk = TelegramClient(session_name, a, b)
         try:
             await cdk.start()
         except Exception as e:
             pass   
-        
+
     if S9:
         session_name = str(S9)
         print("String 9 Found")
@@ -272,18 +257,16 @@ async def start_eagle():
             S9_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 9 not Found")
-        pass
         session_name = "startup"
         ddk = TelegramClient(session_name, a, b)
         try:
             await ddk.start()
         except Exception as e:
             pass   
-    
-  
+
+
     if S0:
         session_name = str(S0)
         print("String 10 Found")
@@ -298,10 +281,8 @@ async def start_eagle():
             S0_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 10 not Found")
-        pass
         session_name = "startup"
         edk = TelegramClient(session_name, a, b)
         try:
@@ -337,22 +318,23 @@ async def gifspam(e, S):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
-    if e.sender_id in S1_USERS:
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
-        if len(e.text) > 5:
-            bio = str(eagle[0])
-            text = "Changing Bio"
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in S1_USERS:
+        return
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 5:
+        bio = str(eagle[0])
+        text = "Changing Bio"
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await e.client(functions.account.UpdateProfileRequest(about=bio))
+            await event.edit("Succesfully Changed Bio")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
+        await e.reply(usage, parse_mode=None, link_preview=None )
             
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
@@ -363,22 +345,23 @@ async def _(e):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
-    if e.sender_id in SUDO_USERS:
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 6:
-            bc = EAGLE[0]
-            text = "Joining..."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Succesfully Joined")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in SUDO_USERS:
+        return
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 6:
+        bc = EAGLE[0]
+        text = "Joining..."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await e.client(functions.channels.JoinChannelRequest(channel=bc))
+            await event.edit("Succesfully Joined")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
+        await e.reply(usage, parse_mode=None, link_preview=None )
             
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
@@ -389,22 +372,23 @@ async def _(e):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/tbh_fight_club\n\n.pjoin tbh_fight_club"
-    if e.sender_id in SUDO_USERS:
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 7:
-            bc = eagle[0]
-            text = "Joining...."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Succesfully Joined")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in SUDO_USERS:
+        return
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 7:
+        bc = eagle[0]
+        text = "Joining...."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await e.client(ImportChatInviteRequest(bc))
+            await event.edit("Succesfully Joined")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/tbh_fight_club\n\n.pjoin tbh_fight_club"
+        await e.reply(usage, parse_mode=None, link_preview=None )
             
         
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -416,23 +400,24 @@ async def _(e):
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
-    if e.sender_id in SUDO_USERS:
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 7:
-            bc = eagle[0]
-            bc = int(bc)
-            text = "Leaving....."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in SUDO_USERS:
+        return
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 7:
+        bc = eagle[0]
+        bc = int(bc)
+        text = "Leaving....."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await event.client(LeaveChannelRequest(bc))
+            await event.edit("Succesfully Left")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
+        await e.reply(usage, parse_mode=None, link_preview=None )
             
                 
         
@@ -448,34 +433,35 @@ async def _(e):
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
+    if e.sender_id not in SUDO_USERS:
+        return
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
+    if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+        return await e.reply(usage, parse_mode=None, link_preview=None )
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    S = await e.get_reply_message()
     error = "Spam Module can only be used till 1000 count. For bigger spams use BigSpam."
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        S = await e.get_reply_message()
-        if len(eagle) == 2:
-            message = str(eagle[1])
-            counter = int(eagle[0])
-            if counter > 1000:
-                return await e.reply(error, parse_mode=None, link_preview=None )
-            await asyncio.wait([e.respond(message) for i in range(counter)])
-        elif e.reply_to_msg_id and S.media:  
-            counter = int(eagle[0])
-            if counter > 1000:
-                return await e.reply(error, parse_mode=None, link_preview=None )
-            for _ in range(counter):
-                S = await e.client.send_file(e.chat_id, S, caption=S.text)
-                await gifspam(e, S)  
-        elif e.reply_to_msg_id and S.text:
-            message = S.text
-            counter = int(eagle[0])
-            if counter > 1000:
-                return await e.reply(error, parse_mode=None, link_preview=None )
-            await asyncio.wait([e.respond(message) for i in range(counter)])
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if len(eagle) == 2:
+        message = str(eagle[1])
+        counter = int(eagle[0])
+        if counter > 1000:
+            return await e.reply(error, parse_mode=None, link_preview=None )
+        await asyncio.wait([e.respond(message) for _ in range(counter)])
+    elif e.reply_to_msg_id and S.media:  
+        counter = int(eagle[0])
+        if counter > 1000:
+            return await e.reply(error, parse_mode=None, link_preview=None )
+        for _ in range(counter):
+            S = await e.client.send_file(e.chat_id, S, caption=S.text)
+            await gifspam(e, S)
+    elif e.reply_to_msg_id and S.text:
+        message = S.text
+        counter = int(eagle[0])
+        if counter > 1000:
+            return await e.reply(error, parse_mode=None, link_preview=None )
+        await asyncio.wait([e.respond(message) for _ in range(counter)])
+    else:
+        await e.reply(usage, parse_mode=None, link_preview=None )
             
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
@@ -489,42 +475,43 @@ async def spam(e):
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 async def spam(e):
+    if e.sender_id not in SUDO_USERS:
+        return
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        S = await e.get_reply_message()
-        eagle = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        eaglesexy = eagle[1:]
-        if len(eaglesexy) == 2:
-            message = str(eaglesexy[1])
-            counter = int(eaglesexy[0])
-            sleeptime = float(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    if e.reply_to_msg_id:
-                        await S.reply(message)
-                    else:
-                        await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and S.media:  
-            counter = int(eaglesexy[0])
-            sleeptime = float(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    S = await e.client.send_file(e.chat_id, S, caption=S.text)
-                    await gifspam(e, S) 
-                await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and S.text:
-            message = S.text
-            counter = int(eaglesexy[0])
-            sleeptime = float(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
+    if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+        return await e.reply(usage, parse_mode=None, link_preview=None )
+    S = await e.get_reply_message()
+    eagle = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+    eaglesexy = eagle[1:]
+    if len(eaglesexy) == 2:
+        message = str(eaglesexy[1])
+        counter = int(eaglesexy[0])
+        sleeptime = float(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "typing"):
+                if e.reply_to_msg_id:
+                    await S.reply(message)
+                else:
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+                await asyncio.sleep(sleeptime)
+    elif e.reply_to_msg_id and S.media:  
+        counter = int(eaglesexy[0])
+        sleeptime = float(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "document"):
+                S = await e.client.send_file(e.chat_id, S, caption=S.text)
+                await gifspam(e, S) 
+            await asyncio.sleep(sleeptime)
+    elif e.reply_to_msg_id and S.text:
+        message = S.text
+        counter = int(eaglesexy[0])
+        sleeptime = float(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "typing"):
+                await e.client.send_message(e.chat_id, message)
+                await asyncio.sleep(sleeptime)
+    else:
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
@@ -538,38 +525,39 @@ async def spam(e):
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
+    if e.sender_id not in SUDO_USERS:
+        return
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        S = await e.get_reply_message()
-        if len(eagle) == 2:
-            message = str(eagle[1])
-            counter = int(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    if e.reply_to_msg_id:
-                        await S.reply(message)
-                    else:
-                        await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.3)
-        elif e.reply_to_msg_id and S.media:  
-            counter = int(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    S = await e.client.send_file(e.chat_id, S, caption=S.text)
-                    await gifspam(e, S) 
-                await asyncio.sleep(0.3)  
-        elif e.reply_to_msg_id and S.text:
-            message = S.text
-            counter = int(eagle[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
+    if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+        return await e.reply(usage, parse_mode=None, link_preview=None )
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    S = await e.get_reply_message()
+    if len(eagle) == 2:
+        message = str(eagle[1])
+        counter = int(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "typing"):
+                if e.reply_to_msg_id:
+                    await S.reply(message)
+                else:
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.3)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+                await asyncio.sleep(0.3)
+    elif e.reply_to_msg_id and S.media:  
+        counter = int(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "document"):
+                S = await e.client.send_file(e.chat_id, S, caption=S.text)
+                await gifspam(e, S) 
+            await asyncio.sleep(0.3)  
+    elif e.reply_to_msg_id and S.text:
+        message = S.text
+        counter = int(eagle[0])
+        for _ in range(counter):
+            async with e.client.action(e.chat_id, "typing"):
+                await e.client.send_message(e.chat_id, message)
+                await asyncio.sleep(0.3)
+    else:
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
@@ -583,41 +571,42 @@ async def spam(e):
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
+    if e.sender_id not in SUDO_USERS:
+        return
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        S = await e.get_reply_message()
-        if len(eagle) == 2:
-            message = str(eagle[1])
-            print(message)
-            a = await e.client.get_entity(message)
-            g = a.id
-            c = a.first_name
-            username = f"[{c}](tg://user?id={g})"
-            counter = int(eagle[0])
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        elif e.reply_to_msg_id:             
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            c = b.first_name
-            counter = int(eagle[0])
-            username = f"[{c}](tg://user?id={g})"
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+        return await e.reply(usage, parse_mode=None, link_preview=None )
+    eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    S = await e.get_reply_message()
+    if len(eagle) == 2:
+        message = str(eagle[1])
+        print(message)
+        a = await e.client.get_entity(message)
+        g = a.id
+        c = a.first_name
+        username = f"[{c}](tg://user?id={g})"
+        counter = int(eagle[0])
+        for _ in range(counter):
+            reply = random.choice(RAID)
+            caption = f"{username} {reply}"
+            async with e.client.action(e.chat_id, "typing"):
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+    elif e.reply_to_msg_id:             
+        a = await e.get_reply_message()
+        b = await e.client.get_entity(a.sender_id)
+        g = b.id
+        c = b.first_name
+        counter = int(eagle[0])
+        username = f"[{c}](tg://user?id={g})"
+        for _ in range(counter):
+            reply = random.choice(RAID)
+            caption = f"{username} {reply}"
+            async with e.client.action(e.chat_id, "typing"):
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+    else:
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 
@@ -660,8 +649,8 @@ async def _(event):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
     if e.sender_id in SUDO_USERS:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -702,8 +691,8 @@ async def _(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     if e.sender_id in SUDO_USERS:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         eagle = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -770,51 +759,53 @@ async def ping(e):
 @edk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
-    if e.sender_id in SUDO_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
-        await e.reply(text, parse_mode=None, link_preview=None )
-        try:
-            await idk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await ydk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await wdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await hdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await sdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await adk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await bdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await cdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await ddk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await edk.disconnect()
-        except Exception as e:
-            pass
-        os.execl(sys.executable, sys.executable, *sys.argv)
-        quit()
+    if e.sender_id not in SUDO_USERS:
+        return
+
+    text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
+    await e.reply(text, parse_mode=None, link_preview=None )
+    try:
+        await idk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await ydk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await wdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await hdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await sdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await adk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await bdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await cdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await ddk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        await edk.disconnect()
+    except Exception as e:
+        pass
+    os.execl(sys.executable, sys.executable, *sys.argv)
+    quit()
 
         
         
@@ -852,48 +843,7 @@ _______  _  _  _____  _ _
 print(text)
 print("")
 print("Pawri💥! Your EAGLEMAFIA USPAM BOT IS DEPLOYED AND WORKING ⚡⚡ ENJOY SPAM ⚡SUPPORT⚡ - @TBHNETWORK.")
-if len(sys.argv) not in (1, 3, 4):
-    try:
-        idk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        ydk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        wdk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        hdk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        sdk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        adk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        bdk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        cdk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        edk.disconnect()
-    except Exception as e:
-        pass
-    try:
-        ddk.disconnect()
-    except Exception as e:
-        pass
-else:
+if len(sys.argv) in {1, 3, 4}:
     try:
         idk.run_until_disconnected()
     except Exception as e:
@@ -932,6 +882,48 @@ else:
         pass
     try:
         ddk.run_until_disconnected()
+    except Exception as e:
+        pass
+
+else:
+    try:
+        idk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        ydk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        wdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        hdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        sdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        adk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        bdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        cdk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        edk.disconnect()
+    except Exception as e:
+        pass
+    try:
+        ddk.disconnect()
     except Exception as e:
         pass
         
