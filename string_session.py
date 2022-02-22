@@ -1,4 +1,4 @@
-from telethon.sessions import string_session
+from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
 print("""WELCOME TO TBH STRINGSESSION\nGENERATOR BY @Cazador_op\n\n""")
