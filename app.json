@@ -23,6 +23,21 @@
         "value": "",
         "required": true
       },
+        "HNDLR": {
+         "description": "Custom command handler.",
+         "value": "/",
+         "required": true
+      },
+      "OWNER_NAME": {
+         "description": "Owners name to be displayed in alive command.",
+         "value": "@VAMPIRE_OWNER",
+         "required": true
+      },
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": ""
+      },
       "STRING1": {
         "description": "Telethon String Session",
         "value": "",
