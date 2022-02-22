@@ -15,12 +15,12 @@
     "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "",
+        "value": "2634874",
         "required": true
       },
       "API_HASH": {
         "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "",
+        "value": "a418fd5c4497ca9986f31c314da6f170",
         "required": true
       },
         "HNDLR": {
@@ -30,13 +30,13 @@
       },
       "OWNER_NAME": {
          "description": "Owners name to be displayed in alive command.",
-         "value": "@HELLL_BOYYY",
+         "value": "@SUKHPAL443",
          "required": true
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2034973894"
+         "value": "5038173179"
       },
       "STRING1": {
         "description": "Telethon String Session",
