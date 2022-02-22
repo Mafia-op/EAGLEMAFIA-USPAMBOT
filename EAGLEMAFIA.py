@@ -45,6 +45,8 @@ ddk = ""
 que = {}
 
 SUDO_USERS = [5017007587, 5222186306, 5222186306, 2034973894]
+   for x in SUDO: 
+    SUDO_USERS.append(x)
     
 async def start_eagle():
     global idk
