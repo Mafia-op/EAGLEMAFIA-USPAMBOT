@@ -17,7 +17,7 @@ BIO_MESSAGE = getenv("BIO")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
 SUDO_USERS.append(OWNER_ID)
-OWNER_ID = int(owmner)
+OWNER_ID = int(owner)
 OWNER_NAME = getenv("OWNER_NAME")
 SUDO_USERS = list(SUDO_USERS)
 HNDLR = getenv("HNDLR", default="*")
