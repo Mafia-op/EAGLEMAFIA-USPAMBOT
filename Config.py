@@ -15,7 +15,7 @@ API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 BIO_MESSAGE = getenv("BIO")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
-
+OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
 SUDO_USERS.append(OWNER_ID)
 OWNER_ID = int(owner)
 OWNER_NAME = getenv("OWNER_NAME")
