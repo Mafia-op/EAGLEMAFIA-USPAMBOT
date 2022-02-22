@@ -2,18 +2,4 @@ Telethon
 python-dotenv
 asyncio
 TgCrypto
-telethon==1.13.0
 
-heroku3==5.1.4
-
-gitpython==3.1.18
-
-python-decouple==3.4
-
-sqlalchemy==1.3.20
-
-cryptg
-
-psycopg2==2.9.1
-
-python-dotenv
