@@ -1,8 +1,15 @@
-from telethon.sessions import StringSession
+from telethon.sessions import string_session
 from telethon.sync import TelegramClient
 
-print("")
-print("""Welcome To TBH String Session\nGenerator By @Cazador_op\n\n""")
+print("""WELCOME TO TBH STRINGSESSION\nGENERATOR BY @Cazador_op\n\n""")
+print("""
+███████╗░█████╗░░██████╗░██╗░░░░░███████╗
+██╔════╝██╔══██╗██╔════╝░██║░░░░░██╔════╝
+█████╗░░███████║██║░░██╗░██║░░░░░█████╗░░
+██╔══╝░░██╔══██║██║░░╚██╗██║░░░░░██╔══╝░░
+███████╗██║░░██║╚██████╔╝███████╗███████╗
+╚══════╝╚═╝░░╚═╝░╚═════╝░╚══════╝╚══════╝
+      """)
 print("""Special Thanks To My Buddy Respective TBH USERBOT\nOwner @BLACKMAMBA_OFFICIAL\n\n""")
 print("""Enter Your Valid Details To Continue!\n\n """)
 
