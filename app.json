@@ -46,12 +46,12 @@
       "STRING2": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING3": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING4": {
         "description": "Telethon String Session",
@@ -81,7 +81,7 @@
       "STRING9": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING10": {
         "description": "Telethon String Session",
