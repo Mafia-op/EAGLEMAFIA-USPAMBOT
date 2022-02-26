@@ -44,7 +44,7 @@ ddk = ""
 
 que = {}
 
-SUDO_USERS = [5017007587, 5222186306, 5222186306, 2034973894]
+SUDO_USERS = []
    for x in SUDO: 
     SUDO_USERS.append(x)
     
