@@ -45,6 +45,7 @@ ddk = ""
 que = {}
 
 SUDO_USERS = []
+   for x in sudo:
     SUDO_USERS.append(x)
     
 async def start_eagle():
